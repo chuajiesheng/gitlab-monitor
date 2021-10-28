@@ -132,7 +132,7 @@ $aurora-purple: $nord15;
 
   .project-card {
     background-color: white !important;
-    box-shadow: 0 3px + 100px 0 -100px inset var(--project-card-status-color);
+    box-shadow: 0 5px + 100px 0 -100px inset var(--project-card-status-color);
 
     .info {
       padding: 0.5rem;
