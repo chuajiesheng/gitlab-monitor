@@ -172,7 +172,7 @@
         const maxAge = Config.root.maxAge
 
         this.projects = projects.filter(project => {
-          return project.jobs_enabled &&
+          return project.jobs_enabled && !project.archived &&
             (maxAge === 0 || ((new Date() - new Date(project.last_activity_at)) / 1000 / 60 / 60 <= maxAge)) &&
             (
               // Include rules
