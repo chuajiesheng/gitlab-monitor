@@ -313,8 +313,8 @@
                 count++
               }
 
-              if (count >= historyCount) {
-                break refLoop
+              if (count > historyCount) {
+                continue refLoop
               }
             }
 
@@ -342,8 +342,8 @@
                 newPipelines[refName].push(resolvedPipeline)
                 count++
 
-                if (count >= historyCount) {
-                  break
+                if (count > historyCount) {
+                  continue
                 }
               }
             }
